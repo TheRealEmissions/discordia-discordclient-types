@@ -4,6 +4,7 @@ declare class App extends BaseApp {
     constructor();
     init(): Promise<void>;
     importEvents(): Promise<void>;
+    pushEvent(name: string): Promise<void>;
     login(): Promise<void>;
 }
 export default App;

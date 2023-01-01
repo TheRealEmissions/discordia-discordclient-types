@@ -1,0 +1,19 @@
+{
+  "name": "ts-modular-bot-addon-discord_client-types",
+  "version": "1.0.0",
+  "description": "Types for Events addon for Modular Series",
+  "main": "discord-client/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRealEmissions/ts-modular-bot-addon-discord_client-types.git"
+  },
+  "author": "Emissions#2565",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRealEmissions/ts-modular-bot-addon-discord_client-types/issues"
+  },
+  "homepage": "https://github.com/TheRealEmissions/ts-modular-bot-addon-discord_client-types#readme"
+}

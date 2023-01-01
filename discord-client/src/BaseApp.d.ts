@@ -1,6 +1,6 @@
 import { HeadFile } from "ts-modular-bot-file-design";
 import { Dependency } from "ts-modular-bot-types";
-import Events from "events-types";
+import Events from "ts-modular-bot-addon-events-types";
 import Discord from "discord.js";
 declare abstract class BaseApp extends HeadFile {
     constructor();

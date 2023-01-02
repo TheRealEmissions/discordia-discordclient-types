@@ -10,6 +10,8 @@ declare abstract class BaseApp extends HeadFile {
     static Events: typeof Events;
     static readonly Client: Discord.Client<boolean>;
     getClient(): Discord.Client<boolean>;
+    static readonly Rest: Discord.REST;
+    getRest(): Discord.REST;
     abstract init(): void;
     getDependencies(): Dependency[];
 }

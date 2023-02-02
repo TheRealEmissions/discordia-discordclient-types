@@ -7,12 +7,16 @@ declare abstract class BaseApp extends HeadFile {
     type: Dependency;
     name: string;
     load: boolean;
+    static sharded: boolean;
+    getSharded(): boolean;
     static Events: typeof Events;
-    static readonly Client: Discord.Client<boolean>;
+    static readonly Client: Discord.Client<boolean> | null;
     getClient(): Discord.Client<boolean>;
     static readonly Rest: Discord.REST;
     getRest(): Discord.REST;
     abstract init(): void;
     getDependencies(): Dependency[];
+    static readonly ShardManager: Discord.ShardingManager | null;
+    getShardManager(): Discord.ShardingManager;
 }
 export default BaseApp;

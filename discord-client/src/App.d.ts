@@ -3,12 +3,15 @@ declare class App extends BaseApp {
     events: any[];
     constructor();
     init(): Promise<void>;
+    private initUnsharded;
+    private initSharded;
+    private initOnShard;
     private initModule;
     private ensureDependency;
     private loadFolders;
     private loadHeadFiles;
     private importEvents;
-    pushEvent(name: string): Promise<void>;
+    private pushEvent;
     login(): Promise<void>;
 }
 export default App;

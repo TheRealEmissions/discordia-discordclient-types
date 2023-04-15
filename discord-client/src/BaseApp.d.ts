@@ -1,8 +1,8 @@
-import { HeadFile } from "ts-modular-bot-file-design";
+import Base from "ts-modular-bot-file-design";
 import { Dependency } from "ts-modular-bot-types";
 import Events from "ts-modular-bot-addon-events-types";
 import Discord from "discord.js";
-declare abstract class BaseApp extends HeadFile {
+declare abstract class BaseApp extends Base {
     constructor();
     type: Dependency;
     name: string;
@@ -14,7 +14,7 @@ declare abstract class BaseApp extends HeadFile {
     getClient(): Discord.Client<boolean>;
     static readonly Rest: Discord.REST;
     getRest(): Discord.REST;
-    abstract init(): void;
+    abstract init(): Promise<void>;
     getDependencies(): Dependency[];
     static readonly ShardManager: Discord.ShardingManager | null;
     getShardManager(): Discord.ShardingManager;

@@ -1,0 +1,19 @@
+{
+  "name": "ada-discordclient-types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "discord-client/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealemissions/discordia-discordclient-types.git"
+  },
+  "author": "Emissions#2565",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therealemissions/discordia-discordclient-types/issues"
+  },
+  "homepage": "https://github.com/therealemissions/discordia-discordclient-types#readme"
+}
